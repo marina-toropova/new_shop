@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap" rel="stylesheet">
+    <title>Document</title>
+</head>
+
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="header__wrapper">
+                <div class="header__contorls">
+                    <img class="header__logo" src="./img/logo.svg" alt="logo" width="44" height="38">
+                    <img src="./img/loupe.svg" alt="loupe" width="26" height="27">
+                </div>
+                <div class="header__contorls">
+                    <button class="header__button">
+                        <img src="./img/menu-1.svg" alt="menu" width="32" height="23">
+                    </button>
+                    <a class="header__person-link" href="#"><img src="./img/person.svg" alt="person" width="29"
+                            height="29"></a>
+                    <a href="#"><img src="./img/basket.svg" alt="basket" width="32" height="29"></a>
+                </div>
+            </div>
+        </div>
+        <nav class="header__navigation">
+            menu
+            <ul>
+                <li>
+                    <h2>man</h2>
+                    <ul>
+                        <li><a href="#">link</a></li>
+                        <li><a href="#">link</a></li>
+                        <li><a href="#">link</a></li>
+                        <li><a href="#">link</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <h2>woman</h2>
+                    <ul>
+                        <li><a href="#">link</a></li>
+                        <li><a href="#">link</a></li>
+                        <li><a href="#">link</a></li>
+                        <li><a href="#">link</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <h2>kids</h2>
+                    <ul>
+                        <li><a href="#">link</a></li>
+                        <li><a href="#">link</a></li>
+                        <li><a href="#">link</a></li>
+                        <li><a href="#">link</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <h1>registration</h1>
+    <form action="" method="post">
+        <fieldset>
+            <legend>Your Name</legend>
+            <label><input type="text" placeholder="First Name"></label><br>
+            <label class="label" for="username"></label>
+            <input class="input" type="text" id="username" placeholder="Last Name">
+        </fieldset>
+
+        <div>
+            <input type="radio" id="male" name="gender" value="male">
+            <label for="male">Male</label>
+            <input type="radio" id="female" name="gender" value="female">
+            <label for="female">Female</label>
+        </div>
+        <fieldset>
+            <legend>Login Details</legend>
+            <label><input type="text" placeholder="Email"></label><br>
+            <label class="label" for="username"></label>
+            <input class="input" type="text" id="username" placeholder="Password">
+        </fieldset>
+    </form>
+    <p>Please use 8 or more characters, with at least 1 number and a mixture of uppercase and lowercase letters</p>
+    <button class="button__registration">
+        join now
+    </button>
+    <footer>
+        <div class="footer__information">
+            <ul class="footer__information--list">
+                <li class="footer__information--item">
+                    <img src="img/intersect.svg" alt="contact" width="96" height="96">
+                    <p class="footer__information--paragraph">“Vestibulum quis porttitor dui! Quisque viverra nunc mi, a
+                        pulvinar purus condimentum“</p>
+                </li>
+                <li class="footer__information--item">
+                    <h3 class="footer__information--heading">subscribe</h3>
+                    <p class="footer__information--text">FOR OUR NEWLETTER AND PROMOTION</p>
+                    <div class="form">
+                        <input class="email__input" type="email" placeholder="Enter Your Email">
+                        <button type="submit" class="button__email">Subscribe</button>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <div class="footer__pagination">
+            <span class="rights">© 2021 Brand All Rights Reserved.</span>
+            <ul class="contacts_list">
+                <li class="contacts_list--item"><a href="#"><img src="img/facebook.svg" alt="facebook"></a></li>
+                <li class="contacts_list--item"><a href="#"><img src="img/insta.svg" alt="inst"></a></li>
+                <li class="contacts_list--item"><a href="#"><img src="img/pinterest.svg" alt="pinterest"></a></li>
+                <li class="contacts_list--item"><a href="#"><img src="img/twitter.svg" alt="twitter"></a></li>
+            </ul>
+        </div>
+    </footer>
+</body>
+
+</html>
