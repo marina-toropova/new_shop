@@ -44,6 +44,10 @@ body {
     display: none;
 }
 
+.header__navigation:hover {
+    display: flex;
+}
+
 .header__button {
     background-color: transparent;
     border: none;
@@ -56,6 +60,100 @@ body {
 
 .header__person-link {
     margin: 0 34px 0 0;
+}
+
+.new-arrivals {
+    height: 148px;
+    background-color: #F8F3F4;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.new-arrivals__link {
+    text-transform: uppercase;
+    text-decoration: none;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 17px;
+    color: #636363;
+}
+
+.new-arrivals__link--title {
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 29px;
+    letter-spacing: 0em;
+    color: #F16D7F;
+}
+
+.new-arrivals__list {
+    display: flex;
+    text-transform: uppercase;
+    text-decoration: none;
+    align-items: center;
+}
+
+.new-arrivals__list li {
+    display: inline-block; /* Выстраиваем по горизонтали */
+    color: #F16D7F;
+   }
+
+.new-arrivals__list li::before {
+    content: '/'; /* Разделитель */
+    margin-left: 5px; /* Отступ слева */
+    margin-right: 5px; /* Отступ справа */
+    color: #7f7f7f; /* Цвет разделителя */
+   }
+.new-arrivals__list li:first-child::before {
+    content: ''; /* Убираем разделитель для первого пункта */
+   }
+
+.products__navigation {
+    display: none;
+}
+
+.products__navigation:hover {
+    display: active;
+}
+
+.filter-wrapper {
+    display: flex;
+    justify-content: space-between;
+}
+
+.filter-wrapper__link {
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 17px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #000000;
+}
+
+.filter__list {
+    display: flex;
+    padding-right: 420px;
+}
+
+.filter__list li::after {
+    content: 'v'; /* Разделитель */
+    margin-left: 10px; /* Отступ слева */
+    margin-right: 10px;
+    color: #6F6E6E; 
+   }
+
+.filter__list a {
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 17px;
+    letter-spacing: 0em;
+    color: #6F6E6E;
 }
 
 .brand {
@@ -177,6 +275,10 @@ body {
     width: 360px;
 }
 
+.products__list--information {
+    padding: 0 0 0 16px;
+}
+
 .products__list--title {
     font-size: 13px;
     line-height: 16px;
@@ -200,6 +302,7 @@ body {
 
 .products__list--cardbox {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     padding-top: 48px;
 }
@@ -252,6 +355,7 @@ body {
     min-height: 448px;
     background-image: url(../img/footer-image.jpg);
     width: 100%;
+    background-size: cover;
 }
 
 .footer__pagination {
@@ -366,4 +470,51 @@ body {
 
 .button__registration {
     text-transform: uppercase;
+}
+
+.item-list {
+    display: flex;
+    justify-content: center;
+}
+
+.pager {
+    display: flex;
+    border: 1px solid #EBEBEB;
+    padding: 12px 40px;
+    margin: 48px 0 96px;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 19px;
+    letter-spacing: 0em;
+    color: #EF5B70;
+}
+
+.pager-item a,
+.pager span {
+    text-decoration: none;
+    color: #5D5D5D;
+    padding-left: 18px;
+    opacity: 0.5;
+}
+
+.pager-current span {
+    color: #EF5B70;
+}
+
+.pager-previous a,
+.pager-next a {
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: black;
+    padding-left: 18px;
+}
+
+.filter-wrapper__box--link {
+    padding-left: 11px;
+}
+
+.filter-wrapper__box a:hover {
+    color: #EF5B70;
 }
