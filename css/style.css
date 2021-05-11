@@ -518,3 +518,8 @@ body {
 .filter-wrapper__box a:hover {
     color: #EF5B70;
 }
+
+.products__button:hover {
+    background-color: #EF5B70;
+    color: #FFFFFF;
+}
