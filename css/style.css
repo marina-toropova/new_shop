@@ -632,7 +632,7 @@ body {
 }
 
 .desc__link {
-    padding: 14px 33px;
+    padding: 14px 56px 14px 0;
 }
 
 .desc__link path:hover {
