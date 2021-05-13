@@ -85,7 +85,7 @@ body {
     font-weight: 400;
     line-height: 29px;
     letter-spacing: 0em;
-    color: #F16D7F;
+    color: var(--dark-pink);
 }
 
 .new-arrivals__list {
@@ -97,7 +97,7 @@ body {
 
 .new-arrivals__list li {
     display: inline-block; /* Выстраиваем по горизонтали */
-    color: #F16D7F;
+    color: var(--dark-pink);
    }
 
 .new-arrivals__list li::before {
@@ -167,7 +167,7 @@ body {
     font-weight: 900;
     line-height: 58px;
     text-transform: uppercase;
-    border-left: 12px solid #F16D7F;
+    border-left: var(--dark-pink) 12px solid;
     display: inline-block;
     padding-left: 16px;
 }
@@ -182,7 +182,7 @@ body {
 .aside-box {
     width: 12px;
     height: 92px;
-    background-color: dark-pink#F16D7F;
+    background-color: var(--dark-pink);
 }
 
 .brand__subtitle {
@@ -215,7 +215,7 @@ body {
     font-size: 24px;
     line-height: 29px;
     text-transform: uppercase;
-    color: #F16D7F;
+    color: var(--dark-pink);
     font-weight: 700;
     text-align: center;
 }
@@ -297,7 +297,7 @@ body {
 .products__list--priсe {
     font-size: 16px;
     line-height: 19px;
-    color:#F16D7F;
+    color:var(--dark-pink);
     padding-top: 18px;
 }
 
@@ -309,7 +309,7 @@ body {
 }
 
 .button {
-    color: #F16D7F;
+    color: var(--dark-pink);
     background-color: #f8f8f8;
     padding: 15px 39px;
     position: relative;
@@ -423,7 +423,7 @@ body {
 }
 
 .button__email {
-    background-color: #F16D7F;
+    background-color:var(--dark-pink);
     width: 100px;
     height: 49px;
     left: 0;
@@ -468,7 +468,7 @@ body {
 }
 
 .contacts_list--item:hover {
-    background-color: #F16D7F;
+    background-color:var(--dark-pink);
     fill: #FFFFFF;
 }
 
@@ -591,7 +591,7 @@ body {
     font-weight: 300;
     font-size: 14px;
     line-height: 17px;
-    color: #F16D7F;
+    color:var(--dark-pink);
     padding: 64px 0 12px;
 }
 
@@ -627,7 +627,7 @@ body {
 .desc_hr {
     width: 641px;
     align: center;
-    color: #EAEAEA, 100 %;
+    color: #EAEAEA, 100%;
     size: 1;
 }
 
@@ -642,3 +642,26 @@ body {
 .catalog {
     padding-bottom: 128px;
 }
+
+.social {
+    display: flex;
+    align-items: center;
+  }
+  
+  .link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 80px;
+    height: 80px;
+    margin-right: 10px;
+    font-size: 60px;
+    color: white;
+    text-decoration: none;
+    background-color: maroon;
+  }
+    link:hover {
+      color: green;
+      background-color: pink;
+    }
+  }
