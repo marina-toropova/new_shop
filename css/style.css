@@ -140,7 +140,7 @@ body {
 }
 
 .filter__list li::after {
-    content: 'v'; /* Разделитель */
+    content: url(img/arrow.svg); /* Разделитель */
     margin-left: 10px; /* Отступ слева */
     margin-right: 10px;
     color: #6F6E6E; 
@@ -273,6 +273,7 @@ body {
     background-color: #f8f8f8;
     min-height: 581px;
     width: 360px;
+    margin: 30px 0 0 0;
 }
 
 .products__list--information {
@@ -304,17 +305,19 @@ body {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    padding-top: 48px;
+    padding-top: 18px;
 }
 
 .button {
     color: #F16D7F;
     background-color: #f8f8f8;
     padding: 15px 39px;
-    display: block;
     position: relative;
-    margin: 48px auto;
     border: 1px solid #FF6A6A;
+}
+
+.button a {
+    text-decoration: none;
 }
 
 .advantages {
@@ -466,6 +469,11 @@ body {
 
 .contacts_list--item:hover {
     background-color: #F16D7F;
+    fill: #FFFFFF;
+}
+
+.contacts_list--item:hover {
+    fill: #FFFFFF;
 }
 
 .button__registration {
@@ -517,4 +525,120 @@ body {
 
 .filter-wrapper__box a:hover {
     color: #EF5B70;
+}
+
+.products__button {
+    color: #EF5B70;
+    text-align: center;
+    text-decoration: none;
+}
+
+.products__button:hover {
+    background-color: #EF5B70;
+    color: #FFFFFF;
+}
+
+.products__button:hover a {
+    color: #FFFFFF;
+}
+
+.link {
+    margin: 48px auto;
+    display: flex;
+    justify-content: center;
+}
+
+.icons__share path:hover {
+    fill: #FFFFFF;
+}
+
+.product__page {
+    height: 777px;
+    background-color: #F7F7F7;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.control {
+    width: 47px;
+    height: 47px;
+    background: rgba(42, 42, 42, 0.15);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.fas {
+    font-size: 21px;
+    color: black;
+}
+
+.desc {
+    width: 1141px;
+    height: 601px;
+    background-color: #fff;
+    border: 1px solid #EAEAEA;
+    margin-top: -50px;
+    position: sticky;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.desc__title {
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 17px;
+    color: #F16D7F;
+    padding: 64px 0 12px;
+}
+
+.desc__title-2 {
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 22px;
+    color: #4D4D4D;
+    padding: 12px 0 0;
+}
+
+.desc__paragraph {
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 17px;
+    color: #5E5E5E;
+    text-align: center;
+    padding: 49px 0 0;
+    width: 50%;
+}
+
+.desc__prize {
+    font-weight: 300;
+    font-size: 24px;
+    line-height: 29px;
+    color: #EF5B70;
+    padding: 32px 0 65px;
+}
+.desc__list {
+    padding: 65px 0 0;
+}
+
+.desc_hr {
+    width: 641px;
+    align: center;
+    color: #EAEAEA, 100 %;
+    size: 1;
+}
+
+.desc__link {
+    padding: 14px 56px 14px 0;
+}
+
+.desc__link path:hover {
+    fill: #FFFFFF;
+}
+
+.catalog {
+    padding-bottom: 128px;
 }
