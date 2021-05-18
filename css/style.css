@@ -578,6 +578,7 @@ a:active {
     justify-content: center;
     text-decoration: none;
     color: var(--dark-blue);
+    transition: .5s;
 }
 
 .contacts_list--item:hover {
