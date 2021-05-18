@@ -75,32 +75,53 @@
         </nav>
     </header>
     <main>
-        <h1>registration</h1>
-    <form action="" method="post">
-        <fieldset>
-            <legend>Your Name</legend>
-            <label><input type="text" placeholder="First Name"></label><br>
-            <label class="label" for="username"></label>
-            <input class="input" type="text" id="username" placeholder="Last Name">
-        </fieldset>
-
-        <div>
-            <input type="radio" id="male" name="gender" value="male">
-            <label for="male">Male</label>
-            <input type="radio" id="female" name="gender" value="female">
-            <label for="female">Female</label>
-        </div>
-        <fieldset>
-            <legend>Login Details</legend>
-            <label><input type="text" placeholder="Email"></label><br>
-            <label class="label" for="username"></label>
-            <input class="input" type="text" id="username" placeholder="Password">
-        </fieldset>
+        <section class="new-arrivals new-arrivals__cart">
+            <div class="new-arrivals container">
+                <a class="new-arrivals__link--title" href="#">registration</a>
+            </div>
+        </section>
+  
+<div class="registration__contents container">
+    <section class="registration__form" >
+        <form action="" method="post">
+            <fieldset>
+                <legend>Your Name</legend>
+                <label><input class="input" type="text" placeholder="First Name"></label><br>
+                <label class="label" for="username"></label>
+                <input class="input" type="text" id="username" placeholder="Last Name">
+            </fieldset>
+    
+            <div class="registration__radio">
+                <input class="radio" type="radio" id="male" name="gender" value="male">
+                <label for="male">Male</label>
+                <input class="radio" type="radio" id="female" name="gender" value="female">
+                <label for="female">Female</label>
+            </div>
+            <fieldset class="details">
+                <legend>Login Details</legend>
+                <label><input type="text" placeholder="Email" class="input"></label><br>
+                <label class="label" for="username"></label>
+                <input class="input" type="text" id="username" placeholder="Password">
+            </fieldset>
+       
+        <p class="registration__text">Please use 8 or more characters, with at least 1 number and a mixture of uppercase and lowercase letters</p>
+        <button type="submit" class="cart__button registration__button registration__input">JOIN NOW <i class="fas fa-arrow-right"></i></input>
     </form>
-    <p>Please use 8 or more characters, with at least 1 number and a mixture of uppercase and lowercase letters</p>
-    <button class="button__registration">
-        join now
-    </button>
+    </section>
+    
+    <section class="registration__list">
+        <h3>LOYALTY HAS ITS PERKS</h3>
+        <p>Get in on the loyalty program where you can earn points and unlock serious perks. Starting with these as soon as you join:</p>
+        <ul>
+            <li>15% off welcome offer</li>
+            <li>Free shipping, returns and exchanges on all orders        </li>
+            <li>$10 off a purchase on your birthday</li>
+            <li>Early access to products</li>
+            <li>Exclusive offers & rewards</li>
+        </ul>
+    </section>
+</div>
+
     </main>
     <footer>
         <div class="footer__information">
