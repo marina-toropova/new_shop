@@ -326,7 +326,6 @@ a:active {
     position: relative;
     flex-wrap: wrap;
     transition: .5s;
-    overflow: hidden;
 }
 
 .products__list--box {
@@ -360,9 +359,31 @@ a:active {
     opacity: 1;
 }
 
+
+
+.products__list--image {
+    transition: 1s;
+}
+
+.products__list--link:hover .products__list--image {
+    transform: scale(1.2);
+}
+
+.products__link:hover .products__list--image {
+    transform: rotate(360deg);
+}
+
 .products__list--link:hover {
     filter: brightness(0.3);
     transform: scale(1.2);
+}
+
+.product__link:hover .products__list--image {
+    transform: skew(35deg, -20deg);
+}
+
+.link__transition:hover .products__list--image {
+    transform: translateX(-10px);
 }
 
 
