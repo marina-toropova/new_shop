@@ -733,6 +733,13 @@ a:active {
 
 .desc__link {
     padding: 14px 56px 14px 0;
+    transition: all .5s;
+}
+
+.desc__link:hover {
+    padding: 14px 56px 14px 0;
+    background-color: var(--dark-pink);
+    color: var(--white);
 }
 
 .desc__link path:hover {
