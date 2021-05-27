@@ -222,7 +222,6 @@ a:active {
 }
 
 .brand__title-wrapper {
-    padding: 0 0 0 91px;
     flex-grow: 1;
     display: flex;
     align-items: center;
@@ -1008,6 +1007,131 @@ a:active {
  }
 
  
+ @media screen and (max-width: 800px) 
+ {
+ 
+    .container {
+        width: 100vw;
+        margin: 0 auto;
+    }
 
+    .brand__title-wrapper {
+        padding: 0 0 0 39px;
+    }
 
+    .brand__title {
+        font-size: 44px;
+        font-weight: 900;
+        line-height: 53px;
+        text-transform: uppercase;
+        border-left: var(--dark-pink) 12px solid;
+        display: inline-block;
+        padding-left: 16px;
+    }
+    .brand__subtitle {
+        display: block;
+        font-size: 24px;
+        font-weight: 700;
+        line-height: 29px;
+    }
 
+    .offers__item {
+        width: 232px;
+        min-height: 168px;
+        margin: 0 0 20px;
+        background-size: 100%;
+        background-repeat: no-repeat;
+    }
+
+    .offers__item--accesories {
+        width: 100%;
+        margin: 0;
+        min-height: 116px;
+    }
+    .products {
+        margin-top: 155px;
+    }
+    .products__list--card {
+        margin: 16px 0 0 0;
+    }
+    .products__button {
+        margin: 32px 0 0;
+    }
+    .advantages__list {
+        flex-direction: column;
+    }
+    .advantages {
+        min-height: 610px;
+    }
+    .advantages__list--paragraph {
+        width: 40%;
+    }
+
+    .footer__information {
+        min-height: 693px;
+    }
+
+    .footer__information--list {
+        flex-direction: column;
+}
+
+@media screen and (max-width: 375px) 
+ {
+ 
+    .container {
+        width: 330px;
+        margin: 0 auto;
+    }
+
+    .brand img {
+        display: none;
+    }
+    .header__contorls--link-media375 {
+        display: none;
+    }
+    .burger__link {
+        margin: 0 auto;
+    }
+    .brand {
+        min-height: 362px;
+    }
+    .brand__title {
+        font-size: 38px;
+        font-weight: 900;
+        line-height: 46px;
+    }
+    .brand__subtitle {
+        font-size: 20px;
+        font-weight: 700;
+        line-height: 24px;
+    }
+    .brand__title-wrapper {
+        justify-content: center;
+    }
+    .offers__item {
+        width: 343px;
+        min-height: 247px;
+        margin: 0 0 32px;
+        background-size: 100%;
+        background-repeat: no-repeat;
+    }
+    .offers__item--accesories {
+        width: 100%;
+        margin: 0;
+        min-height: 111px;
+    }
+
+    .products {
+        margin-top: 65px;
+    }
+    .registration__list h3, p, li {
+        padding: 48px 0 22px;
+    }
+    .email__input {
+        width: 200px;
+    }
+    .footer__pagination {
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+}
