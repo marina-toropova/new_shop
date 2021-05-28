@@ -108,7 +108,12 @@
             <div class="cart__content">
                 <div class="cart_cardbox">
                     <div class="cart_card">
-                        <img src="img/man_cart.jpg" alt="purchase" width="262" height="306">
+                        <img srcset="./img/man_cart.jpg 1600w,
+                        ./img/man_cart-400.jpg 400w"
+        sizes="(max-width: 1600px) 1600px,
+       (max-width: 375px) 400px"
+       src="img/man_cart.jpg" alt="purchase"
+                    >
                         <div class="cart_card--information">
                             <h3 class="cart_card--title">MANGO  PEOPLE  T-SHIRT</h3>
                             <span class="cart_card--text">Price: <span class="cart_card--prize">$300</span> </span>

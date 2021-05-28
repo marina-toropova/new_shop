@@ -581,6 +581,7 @@ details summary:after {
     font-size: 18px;
     line-height: 30px;
     padding: 5px 0 32px;
+    text-align: center;
 }
 
 .button__email {
@@ -843,7 +844,7 @@ details summary:after {
 }
 
 .cart_card {
-    width: 652px;
+    max-width: 652px;
     height: 306px;
     background-color: var(--white);
     display: flex;
@@ -899,8 +900,8 @@ details summary:after {
 .cart__buttons {
     display: flex;
     justify-content: space-between;
-    width: 652px;
-    height: 50px;
+    max-width: 652px;
+    max-height: 50px;
 }
 
 .cart__button {
@@ -922,6 +923,7 @@ details summary:after {
 .aside-content {
     display: flex;
     flex-direction: column;
+    flex-wrap: wrap;
 }
 
 .cart__registration {
@@ -932,7 +934,9 @@ details summary:after {
 .cart__content {
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
     margin: 0 0 128px;
+
 }
 
 .registration__button {
@@ -1002,6 +1006,7 @@ details summary:after {
     display: flex;
     justify-content: space-between;
     margin-bottom: 96px;
+    flex-wrap: wrap;
 }
 
 .registration__form legend {
@@ -1158,6 +1163,24 @@ details summary:after {
     .product__page {
         min-height: 624px;
     }
+
+    .new-arrivals__cart {
+        margin: 0 0 40px 0;
+    }
+
+    .registration__list {
+        width: 100%;
+        margin: 40px 0 0 0;
+    }
+
+    .registration__list h3, p, li {
+        font-size: 16px;
+        line-height: 19px;
+    }
+
+ }
+
+
     @media screen and (max-width: 375px) 
     {
  
@@ -1214,7 +1237,7 @@ details summary:after {
         padding: 48px 0 22px;
     }
     .email__input {
-        width: 200px;
+        max-width: 200px;
     }
 
     .footer__pagination {
@@ -1238,4 +1261,23 @@ details summary:after {
         padding-bottom: 64px;
     }
 
+    .cart_card {
+        min-width: 358px;
+        min-height: 188px;
+        box-sizing: border-box;
+    }
+
+    .cart_card--title {
+        font-size: 16px;
+        line-height: 19px;
+    }
+
+    .cart_card--text {
+        font-size: 14px;
+        line-height: 17px;
+    }
+
+    .new-arrivals__link--title {
+        margin: 0 auto;
+    }
 }
