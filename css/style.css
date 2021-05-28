@@ -1144,6 +1144,15 @@ details summary:after {
         flex-direction: column;
 }
 
+    .products {
+    margin-top: 24px;
+    }
+
+    .filter__list {
+        margin: 0;
+        padding: 0;
+    }
+
 @media screen and (max-width: 375px) 
  {
  
@@ -1205,5 +1214,17 @@ details summary:after {
     .footer__pagination {
         flex-direction: column;
         justify-content: space-evenly;
+    }
+    
+    .new-arrivals {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+    .registration__list h3, p, li {
+        padding: 0;
+    }
+    .filter-wrapper__link {
+        display: none;
     }
 }
