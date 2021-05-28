@@ -55,11 +55,40 @@ a:active {
 
 .header__navigation {
     display: none;
-}
+    width: 232px;
+    height: 764px;
+    background-color: #ffff;
+    position: absolute;
+  }
+  
+  .details__title {
+    color: #F16D7F;
+    font-size: 14px;
+    line-height: 17px;
+    padding: 20px 0 12px 30px;
+  }
+  
+  .details-prop li {
+    list-style-type: none;
+    text-decoration: none;
+    font-size: 14px;
+    line-height: 17px;
+    color: #6F6E6E;
+    
+  }
+  
+  .details-prop ul a {
+    text-decoration: none;
+    font-size: 14px;
+    line-height: 17px;
+    color: #6F6E6E;
+    }
 
-.header__navigation:hover {
-    display: flex;
-}
+    .item__cross {
+        position: absolute;
+        top: 16px;
+        right: 17px;
+    }
 
 .header__button {
     background-color: transparent;
@@ -89,6 +118,10 @@ a:active {
     fill: var(--dark-pink);
 }
 
+
+.burger__link:hover .header__navigation {
+    display: block;
+}
 
 .new-arrivals {
     height: 148px;
@@ -1092,6 +1125,9 @@ a:active {
     .burger__link {
         margin: 0 auto;
     }
+
+    
+
     .brand {
         min-height: 362px;
     }
