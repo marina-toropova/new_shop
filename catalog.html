@@ -19,6 +19,7 @@
     <meta name="robots" content="all">
      <!--необходим для того, чтобы веб-приложение было загружено и отображалось пользователю аналогично нативному приложению-->
     <link rel="manifest" href="manifest.json">
+    <link href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" rel="stylesheet">
 
     <link rel="apple-touch-icon" sizes="180x180" href="static/images/favicon/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="static/images/favicon/favicon-32x32.png">
@@ -33,8 +34,10 @@
     <link rel="stylesheet" href="./css/reset.css">
     <link rel="stylesheet" href="./css/style.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/3c77485798.js" crossorigin="anonymous"></script>
+    <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/all.js"></script>
 </head>
     <title>Document</title>
 </head>
@@ -113,8 +116,34 @@
         <section class="products container">
             <nav class="filter-wrapper">
                 <div class="filter-wrapper__box">
-                    <a class="filter-wrapper__link" href="#">filter</a>
-                    <a class="filter-wrapper__box--link" href="#"><img src="img/filter-image.svg" alt="filter"></a>
+                    <details class="details product__details">
+                        <summary class="details__title "><a class="filter-wrapper__box--link" href="#"><img src="img/filter-image.svg" alt="filter"></a><a class="filter-wrapper__link" href="#">filter</a></summary>
+                        <div class="details-prop">
+                         <ul> 
+                            <summary class="details__title details__title--product">CATEGORY</summary>
+                           <a href="#"><li>Accessories</li></a>
+                           <a href="#"><li>Bags</li></a>
+                           <a href="#"><li>Denim</li></a>
+                           <a href="#"><li>Hoodies & Sweatshirts</li></a>
+                           <a href="#"><li>Jackets & Coats</li></a>
+                           <a href="#"><li>Polos</li></a>
+                           <a href="#"><li>Shirts</li></a>
+                           <a href="#"><li>Shoes</li></a>
+                           <a href="#"><li>Sweaters & Knits</li></a>
+                           <a href="#"><li>T-Shirts</li></a>
+                           <a href="#"><li>Tanks</li></a>
+                         </ul>
+                        </div>
+                        <summary class="details__title details__title--product">WOMAN</summary>
+                        <div class="details-prop">
+                        </div>
+                        <summary class="details__title details__title--product">KIDS</summary>
+                        <div class="details-prop">
+                        </div>
+                      </details>
+
+                    
+                    
                     <nav class="products__navigation">
                         <ul>
                             <li>
@@ -159,27 +188,33 @@
                 <ul class="filter__list">
                     <li><a href="#">trending now</a></li>
                     <li><a href="#"><img src="img/arrow.svg" alt="arrow"></a></li>
-                    <li class="filter__list--link"><a class="filter__list--link" href="#">size</a></li>
-                    <div class="dropdown-content">
-                        <div>
-                          <input type="checkbox" id="XS" name="XS" class="custom-checkbox">
-                          <label for="scales">XS</label>
-                        </div>
-                      
-                        <div>
-                          <input type="checkbox" id="S" name="S" class="custom-checkbox">
-                          <label for="S">S</label>
-                        </div>
-                        <div>
-                          <input type="checkbox" id="M" name="M" class="custom-checkbox">
-                          <label for="scales">M</label>
-                        </div>
-                      
-                        <div>
-                          <input type="checkbox" id="L" name="L" class="custom-checkbox">
-                          <label for="S">L</label>
-                        </div>
-                      </div>
+                    <li class="filter__list--link"><a class="filter__list--link" href="#">
+                        <details class="details__size">
+                            <summary class=""><a class="filter-wrapper__box--link" href="#"></a><a class="filter-wrapper__link" href="#">size</a></summary>
+                            <div class="dropdown-content">
+                                <div>
+                                    <input type="checkbox" id="XS" name="XS" class="custom-checkbox">
+                                    <label for="scales">XS</label>
+                                  </div>
+                                
+                                  <div>
+                                    <input type="checkbox" id="S" name="S" class="custom-checkbox">
+                                    <label for="S">S</label>
+                                  </div>
+                                  <div>
+                                    <input type="checkbox" id="M" name="M" class="custom-checkbox">
+                                    <label for="scales">M</label>
+                                  </div>
+                                
+                                  <div>
+                                    <input type="checkbox" id="L" name="L" class="custom-checkbox">
+                                    <label for="S">L</label>
+                                  </div>
+                                </div>
+                            </div>
+                        </details>
+                    </a></li>
+                    
                       
                     <li><a href="#"><img src="img/arrow.svg" alt="arrow"></a></li>
                     <li><a href="#">price</a></li>
