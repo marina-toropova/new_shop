@@ -417,7 +417,7 @@ details summary:after {
     align-items: center;
     border: 1px solid #FFFF;
     background: none;
-    opacity: 0;
+    display: none;
     transition: .5s;
 }
 
@@ -425,8 +425,8 @@ details summary:after {
     transition: .5s;
 }
 
-.products__list--link:hover .button_cart {
-    opacity: 1;
+.products__list--link:hover button .button_cart {
+    display: block;
 }
 
 
@@ -1195,9 +1195,11 @@ details summary:after {
     .brand img {
         display: none;
     }
+
     .header__contorls--link-media375 {
         display: none;
     }
+
     .burger__link {
         margin: 0 auto;
     }
@@ -1282,5 +1284,32 @@ details summary:after {
 
     .new-arrivals__link--title {
         margin: 0 auto;
+    }
+
+    .footer__information--paragraph {
+        font-size: 18px;
+        line-height: 22px;
+    }
+
+    .footer__information {
+        min-height: 550px;
+    }
+
+    .advantages__list {
+        margin-bottom: 48px;
+    }
+
+    .advantages__list--card {
+        padding: 48px 0 0;
+    }
+
+    .header__controls_right {
+        justify-content: flex-end;
+        align-items: center;
+    }
+
+    .footer__information--text {
+        font-size: 14px;
+        line-height: 24px;
     }
 }
