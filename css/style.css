@@ -1006,7 +1006,6 @@ details summary:after {
     display: flex;
     justify-content: space-between;
     margin-bottom: 96px;
-    flex-wrap: wrap;
 }
 
 .registration__form legend {
@@ -1176,6 +1175,10 @@ details summary:after {
     .registration__list h3, p, li {
         font-size: 16px;
         line-height: 19px;
+    }
+
+    .registration__contents {
+        flex-wrap: wrap;
     }
 
  }
